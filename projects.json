@@ -49,6 +49,13 @@
       "appstore": "https://apps.apple.com/ae/app/drec-eservices/id1663713914"
     },
     {
+      "name": "Chess coordinate training",
+      "description": "Chess Training App – A React Native-based application designed to help users improve their coordinate recognition skills in chess. Integrated Firebase Messaging for real-time notifications and Remote Config to dynamically update chess themes based on user preferences.",
+      "github": "",
+      "playstore": "https://play.google.com/store/apps/details?id=com.chesscoordinatetranner",
+      "appstore": ""
+    },
+    {
       "name": "JARC",
       "description": "Jebel Ali Racecourse (JARC) - Developed a feature-rich mobile app for Jebel Ali Racecourse, delivering an enhanced experience for racing enthusiasts. Integrated real-time race fixtures, enabling users to stay updated with the latest race schedules and results. Optimized the app for seamless performance and an intuitive UI, ensuring users can effortlessly track their favorite races. Enhanced engagement with live updates and interactive race insights for an immersive experience.",
       "github": "",
