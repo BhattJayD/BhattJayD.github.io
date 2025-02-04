@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jay Bhatt - Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="scripts/projects.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>My Projects</h1>
+      <a class="cta-button" href="index.html">Back to Home</a>
+    </div>
+  </header>
+
+  <section id="project-list">
+    <div class="container" id="projects-container">
+    </div>
+  </section>
+
+  <!-- Modal Structure -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+      <div id="modal-buttons"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0d0d;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+  }
+
+  header {
+    background: linear-gradient(135deg, #1e1e2e, #3a3a6e);
+    padding: 2rem 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem 0;
+  }
+
+  .glass-effect {
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .glass-effect:hover {
+    transform: translateY(-5px);
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .cta-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #bb86fc, #ff79c6);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .cta-button i {
+    font-size: 1.2rem;
+  }
+
+  .cta-button.github {
+    background: #333;
+  }
+
+  .cta-button.playstore {
+    background: #34a853;
+  }
+
+  .cta-button.appstore {
+    background: #007aff;
+  }
+
+  .cta-button:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .buttons {
+      flex-direction: column;
+    }
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+    min-height: 200px;
+    /* Ensures a uniform height */
+  }
+
+  .project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    /* Reduces extra spacing */
+    color: #fff;
+    /* Adjust color if needed */
+  }
+
+  .project-card .short-description {
+    font-size: 1rem;
+    color: #ccc;
+    /* Slightly gray text for contrast */
+    flex-grow: 1;
+    /* Ensures text takes up available space */
+  }
+
+  .project-card .read-more {
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    background: linear-gradient(135deg, #bb86fc, #ff79c6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .project-card .read-more:hover {
+    opacity: 0.8;
+    /* Slight dim effect on hover */
+  }
+
+  /* Make sure the modal content is properly aligned */
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Ensures proper spacing inside modal */
+    padding: 20px;
+    text-align: left;
+  }
+
+
+  /* Modal Background */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Modal Content with Glass Effect */
+  .modal-content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 12px;
+    width: 60%;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  }
+
+  /* Close Button */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .short-description {
+    text-align: left;
+  }
+
+
+  .modal {
+    display: none;
+    /* Ensures modal is hidden initially */
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    /* Ensures smooth transition */
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+
+  /* When modal is active, show it */
+  .modal.show {
+    opacity: 1;
+    visibility: visible;
+  }
+</style>

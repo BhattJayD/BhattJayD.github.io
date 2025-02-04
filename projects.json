@@ -1,0 +1,66 @@
+[
+    {
+      "name": "Skali",
+      "description": "I designed and developed a high-performance iOS app featuring real-time voice/video calls and chat, leveraging AWS AppSync for real-time messaging and 100ms for seamless voice and video communication. Authentication was secured with AWS Amplify Cognito, while AWS Pinpoint enabled efficient push notifications. To enhance collaboration, I integrated AWS S3 for document sharing and Vision Camera for document capture. The app utilized GraphQL with AWS AppSync and DynamoDB, ensuring real-time data updates via Pub/Sub subscriptions. Additionally, I optimized socket connections for low-latency communication, and the deployment was streamlined through an App Store cloud pipeline",
+      "github": "",
+      "playstore": "",
+      "appstore": "https://apps.apple.com/in/app/skali/id6480584448"
+    },
+    {
+      "name": "Xume",
+      "description": "Xume is a health-focused food scanner app that leverages proprietary algorithms to analyze ingredients and assess health suitability. At its peak, it ranked among the Top 10 apps on the App Store. I integrated Sentry for real-time crash tracking, AWS Cognito for secure authentication, and Scandid SDK for seamless barcode scanning. The app provided users with instant insights into food products, helping them make informed dietary choices. Additionally, I optimized performance to ensure a smooth user experience, even with extensive product databases.",
+      "github": "",
+      "playstore": "https://play.google.com/store/apps/details?id=com.planmyfood.app&hl=en_IN",
+      "appstore": "https://apps.apple.com/in/app/xume/id1279728797"
+    },
+    {
+      "name": "DOD",
+      "description": "DOD (Streaming Platform) - Developed a custom video player with screencasting support for both iOS and Android, ensuring a seamless streaming experience. Implemented AWS Cognito for secure user authentication and Firebase to track recently watched videos. Integrated a native module to enable Picture-in-Picture (PiP) mode on Android devices for multitasking. Enhanced app reliability with Firebase Messaging for push notifications, Firebase Crashlytics for real-time crash monitoring, and Sentry for advanced error tracking.",
+      "github": "",
+      "playstore": "",
+      "appstore": ""
+    },
+    {
+      "name": "Huna",
+      "description": "Led a team of 4 developers to build a feature-rich realestate app with a focus on security and seamless user experience. Integrated Salesforce SDK for authentication and Firebase Messaging for real-time push notifications. Ensured app stability with Sentry for crash monitoring and enabled seamless in-app updates using CodePush. Developed a custom native module for managing IoT devices directly from the app. Enhanced security with Remote Config for securely storing API keys and SSL Pinning to prevent man-in-the-middle attacks. Strengthened app reliability with Detox for automated UI testing.",
+      "github": "",
+      "playstore": "https://play.google.com/store/apps/details?id=com.hunaproperties.app&hl=en_IN",
+      "appstore": "https://apps.apple.com/ae/app/huna-living/id6463616889"
+    },
+    {
+      "name": "bingepods",
+      "description": "BingePods (Podcast Streaming App) – Developed the BingePods app with a fully serverless backend powered by Firebase Functions, handling seamless authentication with Firebase Auth, and real-time updates via Firebase Messaging. Utilized Firebase Storage for efficient media handling and Remote Config for dynamic feature toggling. Designed and implemented a custom podcast player using React Native Video, delivering a smooth and intuitive listening experience. Enhanced the app’s UI/UX with Reanimated UI, ensuring a visually engaging and responsive interface.",
+      "github": "",
+      "playstore": "",
+      "appstore": ""
+    },
+    {
+      "name": "kyssafarms",
+      "description": "KyssaFarms – Organic Food Delivery App – Developed key features for KyssaFarms, an organic food delivery platform. Integrated Razorpay SDK for secure and seamless payments. Designed and implemented a coupon system to enable discounts and promotional offers. Focused on enhancing the user experience with a smooth checkout process and optimized transaction flow.",
+      "github": "",
+      "playstore": "",
+      "appstore": ""
+    },
+    {
+      "name": "DREC",
+      "description": "Led a team of 2 developers to build a feature-rich realestate app with a focus on security and seamless user experience. Integrated Salesforce SDK for authentication and Firebase Messaging for real-time push notifications. Ensured app stability with Sentry for crash monitoring and enabled seamless in-app updates using CodePush. Developed a custom native module for managing IoT devices directly from the app. Enhanced security with Remote Config for securely storing API keys and SSL Pinning to prevent man-in-the-middle attacks. Strengthened app reliability with Detox for automated UI testing.",
+      "github": "",
+      "playstore": "https://play.google.com/store/apps/details?id=com.drec.ae&hl=en_IN",
+      "appstore": "https://apps.apple.com/ae/app/drec-eservices/id1663713914"
+    },
+    {
+      "name": "JARC",
+      "description": "Jebel Ali Racecourse (JARC) - Developed a feature-rich mobile app for Jebel Ali Racecourse, delivering an enhanced experience for racing enthusiasts. Integrated real-time race fixtures, enabling users to stay updated with the latest race schedules and results. Optimized the app for seamless performance and an intuitive UI, ensuring users can effortlessly track their favorite races. Enhanced engagement with live updates and interactive race insights for an immersive experience.",
+      "github": "",
+      "playstore": "https://play.google.com/store/apps/details?id=com.jarc.app&hl=en_IN",
+      "appstore": "https://play.google.com/store/apps/details?id=com.drec.ae&hl=en_IN"
+    },
+    {
+      "name": "Tata AIA Life Insurance",
+      "description": "Contributed to the development of the Tata AIA Life Insurance app by implementing secure authentication, including biometric login for seamless access. Designed and developed an intuitive UI, ensuring a smooth user experience. Focused on performance optimization and security enhancements to provide a reliable and efficient insurance management platform.",
+      "github": "",
+      "playstore": "https://play.google.com/store/apps/details?id=com.project4",
+      "appstore": "https://apps.apple.com/in/app/tata-aia-life-insurance/id1634923478"
+    }
+  ]
+  
